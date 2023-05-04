@@ -10,7 +10,7 @@ module Api
       def show
         album = Album.find_by(slug: params[:slug])
 
-        render json: AlbumSerializer.new(album, opitons).serialized_json
+        render json: AlbumSerializer.new(album, options).serialized_json
       end
 
       def create
