@@ -26,11 +26,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_03_185002) do
     t.string "title"
     t.string "description"
     t.integer "score"
-    t.bigint "albums_id", null: false
+    t.bigint "album_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["albums_id"], name: "index_reviews_on_albums_id"
+    t.index ["album_id"], name: "index_reviews_on_album_id"
   end
 
-  add_foreign_key "reviews", "albums", column: "albums_id"
+  add_foreign_key "reviews", "albums"
 end

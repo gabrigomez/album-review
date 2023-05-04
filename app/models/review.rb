@@ -1,3 +1,3 @@
 class Review < ApplicationRecord
-  belongs_to :albums
+  belongs_to :album
 end
