@@ -1,5 +1,5 @@
 module Api
-  module v1
+  module V1
     class AlbumsController < ApplicationController
       def index
         albums = Album.all
