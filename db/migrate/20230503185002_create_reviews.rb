@@ -4,7 +4,7 @@ class CreateReviews < ActiveRecord::Migration[7.0]
       t.string :title
       t.string :description
       t.integer :score
-      t.belongs_to :albums, null: false, foreign_key: true
+      t.belongs_to :album, null: false, foreign_key: true
 
       t.timestamps
     end
