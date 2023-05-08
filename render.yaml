@@ -1,7 +1,7 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: album-review
+    databaseName: album_review
+    user: album_review_user
 
 services:
   - type: web
