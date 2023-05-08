@@ -28,7 +28,7 @@ module Api
       def update
         album = Album.find_by(slug: params[:slug])
         
-        if album.update
+        if album.update(album_params)
           render json: AlbumSerializer.new(album, options).serialized_json
         else
           render json: { error: album.errors.messages }, status: 422          
